@@ -27,7 +27,7 @@
                 <option disabled selected>-- اختر دكتور --</option>
                 @foreach($doctors as $doctor)
                     <option value="{{ $doctor->id }}">
-                        {{ $doctor->name }} ({{ $doctor->specialty->name }})
+                        {{ $doctor->name }}. " ". ({{ $doctor->specialty->name }})
                     </option>
                 @endforeach
             </select>

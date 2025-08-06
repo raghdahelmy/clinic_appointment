@@ -9,7 +9,7 @@
             <p><strong>التاريخ:</strong> {{ $appointment->date }}</p>
             <p><strong>الوقت:</strong> {{ $appointment->time }}</p>
             <p><strong>نوع الحجز:</strong> {{ $appointment->booking_type }}</p>
-            <p><strong>الدكتور:</strong> {{ $appointment->doctor->name }} ({{ $appointment->doctor->specialty->name }})</p>
+            <p><strong>الدكتور:</strong> {{ $appointment->doctor->name }} . " ". ({{ $appointment->doctor->specialty->name }})</p>
             <p><strong>الحالة:</strong>
                 @if($appointment->status == 'pending')
                     <span class="text-yellow-500">قيد الانتظار</span>
