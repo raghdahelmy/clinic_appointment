@@ -19,7 +19,7 @@ class DoctorsTableSeeder extends Seeder
 
         foreach ($specialties as $specialty) {
             Doctor::create([
-                'name' => 'د. '  . ' أحمد'. ($specialty->name),
+                'name' => 'د. '  . " ". ' أحمد'. ($specialty->name),
                 'email' => strtolower($specialty->name) . '@clinic.com',
                 'phone' => '0100000000' . $specialty->id,
                 'specialty_id' => $specialty->id,
